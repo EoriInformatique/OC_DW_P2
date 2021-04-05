@@ -1,0 +1,49 @@
+/*
+style.css
+---------
+ 
+Par Fiona Potter
+*/
+
+#h2_1 {
+    width: 600px;
+    height: 50px;
+    background-color: #CCC;
+}
+
+#h2_2 {
+    width: 50%;
+    min-width: 400px;
+    height: 50px;
+    background-color: #CCC;
+}
+
+#p_1 {
+    border: 1px solid black;
+    margin: 50px;
+}
+
+#p_2 {
+    border: 1px solid black;
+    width: 200px;
+    margin: auto;
+}
+
+#p_3 {
+    border: 1px solid black;
+    padding: 50px;
+}
+
+#p_4 {
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    overflow: scroll;
+}
+
+#p_5 {
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    word-wrap: break-word;
+}

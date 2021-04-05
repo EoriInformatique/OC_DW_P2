@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Les formulaires</title>
+    </head>
+    <body>
+        <p>Bienvenue sur la page d'explication des formulaires !</p>
+
+        <form method="post" action="traitement.php">
+            <p>
+                <label for="pseudo">Input text maxlength 10</label>
+                <input type="text" name="pseudo" id="pseudo" maxlength="10" placeholder="Pseudo"/>
+                <br>
+                <br>
+                <label for="mdp">Input password maxlength 5</label>
+                <input type="password" name="mdp" id="mdp" maxlength="5" placeholder="Mot de passe"/>
+                <br>
+                <br>
+                <label for="email">Input email</label>
+                <input type="email" name="email" id="email" placeholder="E-mail"/>
+                <br>
+                <br>
+                <label for="site">Input url</label>
+                <input type="url" name="site" id="site" placeholder="Adresse site"/>
+                <br>
+                <br>
+                <label for="telephone">Input tel</label>
+                <input type="tel" name="telephone" id="telephone" placeholder="Téléphone"/>
+                <br>
+                <br>
+                <label for="nombre">Input number min 0 max 100 step 0.1</label>
+                <input type="number" name="nombre" id="nombre" placeholder="Nombre" min="0" max="100" step="0.1"/>
+                <br>
+                <br>
+                <label for="nombre_range">Input range min 10 max 50 step 1</label>
+                <input type="range" name="nombre_range" id="nombre_range" placeholder="Nombre range" min="10" max="50" step="1"/>
+                <br>
+                <br>
+                <label for="couleur">Input color </label>
+                <input type="color" name="couleur" id="couleur" />
+                <br>
+                <br>
+                <label for="date">Input date </label>
+                <input type="date" name="date" id="date" />
+                <br>
+                <br>
+                <label for="search">Input search </label>
+                <input type="search" name="search" id="search" />
+                <br>
+                <br>
+                <label for="commentaire">Textarea rox 5 col 100</label>
+                <textarea rows="5" cols="100" name="commentaire" id="commentaire" placeholder="Commentaire">Le texte</textarea>
+                <br>
+                <br>
+                <label for="checkbox">Input checkbox </label>
+                <input type="checkbox" name="checkbox" id="checkbox" checked/>
+                <br>
+                <br>
+                <label for="radio">Input radio </label>
+                <input type="radio" name="radio" id="radio1" value="1"/>
+                <input type="radio" name="radio" id="radio2" value="2"/>
+                <input type="radio" name="radio" id="radio3" value="3"/>
+                <br>
+                <br>
+                <label for="select">Select selected france</label>
+                <select name="select" id="select">
+                    <option value="france">France</option>
+                    <option value="espagne">Espagne</option>
+                    <option value="italie" selected>Italie</option>
+                    <option value="japon">Japon</option>
+                </select>
+                <br>
+                <br>
+                <fieldset>
+                    <legend>Fieldset</legend>
+                    <p>
+                        <label for="nom">Quel est votre nom ? (autofocus et required)</label>
+                        <input type="text" name="nom" id="nom" autofocus required/>
+                    </p>
+                    <p>
+                        <label for="prenom">Quel est votre prenom ?</label>
+                        <input type="text" name="prenom" id="prenom"/>
+                    </p>
+                    <input type="submit" value="Submit" />
+                </fieldset>
+            </p>
+        </form>
+
+    </body>
+</html>

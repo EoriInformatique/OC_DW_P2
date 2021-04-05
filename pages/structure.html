@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Structure d'un page</title>
+    </head>
+    <body>
+        <h1>Bienvenue sur la page qui explique la structuration d'une page !</h1>
+
+        <!-- La balise header sert à délimiter l'entête, on peut y placer tout ce que l'on veut.
+            En soit elle ne sert à rien mais elle aide l'ordinateur à comprendre la structure du
+            site, ça peut aider dans le référencement. -->
+        <header>
+            <h1>Zozor</h1>
+            <h2>Carnets de voyage</h2>
+        </header>
+
+        <!-- La balise nav représente le menu de navigation, il peut être positionné n'importe où sur la page. -->
+        <nav>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">CV</a></li>
+            </ul>
+        </nav>
+
+        <!-- La balise section représente un morceau de la page, une section. -->
+        <section>
+            <!-- La balise asside représente un bloc d'information complémentaire au texte. -->
+            <aside>
+                <h1>À propos de l'auteur</h1>
+                <p>C'est moi, Zozor ! Je suis né un 23 novembre 2005.</p>
+            </aside>
+
+            <!-- La balise article représente un article indépendant qu'on pourrais utiliser tel quelle
+                sur un autre site. C'est le cas par exemple d'un article de presse. -->
+            <article>
+                <h1>Je suis un grand voyageur</h1>
+                <p>Bla bla bla bla (texte de l'article)</p>
+            </article>
+        </section>
+
+        <!-- La balise footer est le pied de page. -->
+        <footer>
+            <p>Copyright Zozor - Tous droits réservés<br />
+            <a href="#">Me contacter !</a></p>
+        </footer>
+    </body>
+</html>

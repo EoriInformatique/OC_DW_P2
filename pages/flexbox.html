@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../css/flexbox.css">
+        <title>Flexbox</title>
+    </head>
+    <body>
+        <h1>Bienvenue sur la page qui explique les flexbox !</h1>
+
+        <p>Par défaut les blocs se place les uns en dessous des autres, c'est le comportement normal</p>
+        <div id=conteneur>
+            <div class="element"></div>
+            <div class="element"></div>
+            <div class="element"></div>
+        </div>
+
+        <p>Si on ajoute la propriété display: flex sur le bloc conteneur, les blocs se positionne 
+            les uns à la suite des autres sur une même ligne </p>
+        <div id=conteneurflex>
+            <div class="element"></div>
+            <div class="element"></div>
+            <div class="element"></div>
+        </div>
+
+        <p>On peut revenir à un affichage vertical tout en utilisant flexbox avec flex-direction: column</p>
+        <div id=conteneurflexcolumn>
+            <div class="element"></div>
+            <div class="element"></div>
+            <div class="element"></div>
+        </div>
+
+        <p>Avec flex-direction: column-reverse l'ordre des éléments est inversés</p>
+        <div id=conteneurflexcolumnreverse>
+            <div class="element"></div>
+            <div class="element"></div>
+            <div class="element"></div>
+        </div>
+
+        <p>Avec flex-direction: row-reverse l'ordre des éléments est inversés</p>
+        <div id=conteneurflexrowreverse>
+            <div class="element"></div>
+            <div class="element"></div>
+            <div class="element"></div>
+        </div>
+
+        <p>Avec flex-wrap: wrap les éléments peuvent aller à la ligne quand ils ont plus de place</p>
+        <div id=conteneurflexwrap>
+            <div class="element"></div>
+            <div class="element"></div>
+            <div class="element"></div>
+        </div>
+
+        <p>Avec justify-content: flex-start les éléments sont alignés au début, c'est par défaut</p>
+        <div id=conteneurjustifyflexstart>
+            <div class="element"></div>
+            <div class="element"></div>
+            <div class="element"></div>
+        </div>
+
+        <p>Avec justify-content: flex-end les éléments sont alignés à la fin</p>
+        <div id=conteneurjustifyflexend>
+            <div class="element"></div>
+            <div class="element"></div>
+            <div class="element"></div>
+        </div>
+
+        <p>Avec justify-content: center les éléments sont alignés au centre</p>
+        <div id=conteneurjustifycenter>
+            <div class="element"></div>
+            <div class="element"></div>
+            <div class="element"></div>
+        </div>
+
+        <p>Avec justify-content: space-between les éléments sont alignés sur tout l'axe alors qu'il y a 
+            de l'espace entre eux</p>
+        <div id=conteneurjustifyspacebetween>
+            <div class="element"></div>
+            <div class="element"></div>
+            <div class="element"></div>
+        </div>
+
+        <p>Avec justify-content: space-around les éléments sont alignés sur tout l'axe alors qu'il y a 
+            de l'espace entre eux avec de l'espace sur les extrémités</p>
+        <div id=conteneurjustifyspacearound>
+            <div class="element"></div>
+            <div class="element"></div>
+            <div class="element"></div>
+        </div>
+
+        <p>Avec align-items permet l'alignement vertical
+            <br />stretch : étirer sur tout l'axe, c'est la valeur par défaut
+            <br />flex-start : aligner au début
+            <br />flex-end : aligner à la fin
+            <br />center : aligner au centre
+            <br />baseline : aligner sur une ligne de base</p>
+        <div id=conteneuralignvertical>
+            <div class="element"></div>
+            <div class="element"></div>
+            <div class="element"></div>
+        </div>
+
+        <p>On peut aussi centrer les éléments horizontalement et verticalement au sein de 
+            leur conteneur très facilement avec flexbox, il suffit d'ajouter une margin: auto 
+            sur l'élément</p>
+
+        <p>Avec align-content permet l'espacement des lignes si les éléments occupent plusieurs lignes
+            <br />stretch : les éléments s'étirent pour essayer d'occuper tout l'espace, c'est la valeur par défaut
+            <br />flex-start : les éléments sont placés au début
+            <br />flex-end : les éléments sont placés à la fin
+            <br />center : les éléments sont placés au centre
+            <br />space-between : les éléments sont séparés avec de l'espace entre eux
+            <br />space-around : les éléments sont séparés avec de l'espace entre eux avec espace au début et à la fin</p>
+        <div id=conteneuraligncontent>
+            <div class="elementLots"></div>
+            <div class="elementLots"></div>
+            <div class="elementLots"></div>
+            <div class="elementLots"></div>
+            <div class="elementLots"></div>
+            <div class="elementLots"></div>
+            <div class="elementLots"></div>
+            <div class="elementLots"></div>
+            <div class="elementLots"></div>
+            <div class="elementLots"></div>
+            <div class="elementLots"></div>
+            <div class="elementLots"></div>
+        </div>
+
+        <p>On peut aussi modifier l'ordre des éléments comme bon nous semble, ils ne dépendent
+            plus de l'ordre dans le quel ils apparaissent dans l'html
+            <br/>Il faut utiliser order sur les éléments</p>
+
+        <p>On peut aussi appliquer flex à un élément, si on applique flex: 1 à un élément il prend 
+            toute la place restante, si on applique flex: 2 cet élément pourra grossier 2 fois plus 
+            que le premier</p>
+    </body>
+</html>

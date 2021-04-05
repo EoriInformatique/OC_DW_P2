@@ -1,0 +1,253 @@
+/*
+style.css
+---------
+ 
+Par Fiona Potter
+*/
+
+/* * : sélecteur universel */
+* { 
+    /* Cible tous les éléments de la page */
+    color: blue; 
+}
+
+h1 {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+h2 {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+h1, h2, p {
+    text-align: center;
+}
+
+.introduction {
+    font-size: 20px;
+}
+
+#bienvenue {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.div_section {
+    border: 1px solid green;
+    padding: 10px;
+}
+
+/* A B : une balise contenue dans une autre */
+h1 em { 
+    /* Cible uniquement les em dans les h1 */
+    font-style: unset;
+}
+
+/* A + B : une balise qui en suit une autre */
+h1 + p { 
+    /* Cible uniquement les p qui suivent les h1 */
+    font-family: cursive;
+}
+
+/* A[attribut] : une balise qui possède un attribut */
+a[title] { 
+    /* Cible tous les a qui possèdent un attribut title */
+
+}
+
+/* A[attribut="Valeur"] : une balise, un attribut et une valeur exacte */
+a[title="Cliquez ici"] { 
+    /* Cible tous les a qui possèdent un attribut title qui a comme 
+    valeur "Cliquez ici"*/
+}
+
+/* A[attribut*="Valeur"] : une balise, un attribut et une valeur */
+a[title*="ici"] { 
+    /* Cible tous les a qui possèdent un attribut title qui a dans sa valeur 
+    le mot "ici" (peu importe sa position) */
+}
+
+#fontsizepx {
+    font-size: 10px;
+}
+
+#fontsizesmall {
+    font-size: small;
+}
+
+#fontsizemedium {
+    font-size: medium;
+}
+
+#fontsizeem {
+    font-size: 1.3em;
+}
+
+#fontfamily {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#fontfamilyambleregular {
+    font-family: 'ambleregular', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+@font-face {
+    font-family: 'ambleregular';
+    src: url('fonts/Amble-Regular-webfont.eot');
+    src: url('fonts/Amble-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Amble-Regular-webfont.woff2') format('woff2'),
+         url('fonts/Amble-Regular-webfont.woff') format('woff'),
+         url('fonts/Amble-Regular-webfont.ttf') format('truetype'),
+         url('fonts/Amble-Regular-webfont.svg#ambleregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#fontstyleitalic {
+    font-style: italic;
+}
+
+#fontstylebold {
+    font-style: bold;
+}
+
+#textdecorationunderline {
+    text-decoration: underline;
+}
+
+#textdecorationoverline {
+    text-decoration: overline;
+}
+
+#textdecorationlinethrough {
+    text-decoration: line-through;
+}
+
+#textalignleft {
+    text-align: left;
+}
+
+#textaligncenter {
+    text-align: center;
+}
+
+#textalignright {
+    text-align: right;
+}
+
+#textalignjustify {
+    text-align: justify;
+}
+
+#pfloat {
+    text-align: justify;
+}
+
+.flottant {
+    float: left;
+}
+
+.clearfloat {
+    clear: left;
+}
+
+#colorred {
+    color: red;
+}
+
+#colorhex {
+    color: #4A28CD;
+}
+
+#colorrgb {
+    color: rgb(250,96,204);
+}
+
+#backgroundcolor {
+    background-color: tomato;
+}
+
+#backgroundimage {
+    background-image: url("../images/Reservia.png");
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-position: bottom;
+    background: url("../images/Reservia.png") fixed repeat bottom;
+    /* background: url("soleil.png") fixed no-repeat top right, url("neige.png") fixed; */
+}
+
+#opacity0 {
+    background-color: black;
+    color: white;
+    opacity: 0;
+}
+
+#opacity1 {
+    background-color: black;
+    color: white;
+    opacity: 1;
+}
+
+#opacity01 {
+    background-color: black;
+    color: white;
+    opacity: 0.5;
+}
+
+#opacityrgba {
+    background-color: rgba(255, 0, 0, 0.6);
+}
+
+#bordersolid {
+    border: 3px solid blue;
+}
+
+#borderdotted {
+    border: 3px dotted blue;
+}
+
+#borderleft {
+    border-left: 3px solid blue;
+}
+
+#borderradius {
+    border: 3px solid blue;
+    border-radius: 10px;
+}
+
+#borderradius2 {
+    border: 3px solid blue;
+    border-radius: 20px / 10px;
+}
+
+#boxshadow {
+    border: 3px solid blue;
+    border-radius: 20px / 10px;
+    box-shadow: 6px 6px 6px black;
+}
+
+#textshadow {
+    text-shadow: 6px 6px 6px black;
+}
+
+#hovergreen:hover {
+    color: green;
+}
+
+#hoverborder:hover {
+    border-left: 3px solid black;
+}
+
+#activered:active {
+    color: red;
+}
+
+#focusgreen:focus {
+    background-color: green;
+}
+
+#visitedgray:visited {
+    color: gray;
+}

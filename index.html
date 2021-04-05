@@ -1,0 +1,234 @@
+<!-- Le doctype est indispensbale car c'est elle qui indique qu'il s'agit bien d'une page web HTML -->
+<!DOCTYPE html>
+<!-- La balise html est la balise principale du code, elle englobe tout le contenu de la page -->
+<html>
+    <!-- L'en-tête, informations générales et importants sur la page -->
+    <head>
+        <!-- L'encodage -->
+        <meta charset="UTF-8"/>
+        <!-- Le titre de la page, un élément très importan, il faut qu'elle reste courte et pertinente, 
+            il apparapit dans les résultats de recherche -->
+        <title>Titre</title>
+    </head>
+
+    <!-- Le corps, la partie principale de la page -->
+    <body>
+        <!-- Délimiter un paragraphe de texte, il faut utiliser cette balise pour indiquer que c'est un 
+            paragraphe -->
+        <!-- Mettre en valeur le texte
+            em : un petit peu plus important que le reste
+            strong : une plus grosse mise en valeur
+            mark : mettre le texte surligné 
+            !!Attention!! Ces balises ne servent pas à mettre du style mais à indiquer à la page que le
+            texte est important c'est tout ! C'est enfaite pour les robots qui parcourent le Web qu'il 
+            est important. Les mots-clés « importants » ont tendance à avoir plus de valeur à leurs yeux, 
+            donc si quelqu'un fait une recherche sur ces mots, il a plus de chances de tomber sur votre 
+            site. -->
+        <p>Bonjour et bienvenue sur mon site !<br />
+        Ceci est mon premier test alors <strong>soyez indulgents</strong> s'il vous plaît, j'apprends petit à petit
+        comment cela marche.</p>
+
+        <p>Pour l'instant c'est un peu vide, mais <em>revenez dans 2-3 jours</em> quand j'aurais appris un peu 
+        plus de choses, <mark>je vous assure que vous allez être surpris !</mark></p>
+
+        <!-- Balises de titres, il ne faut pas choisir ces balises pour leur style mais pour l'intérêt 
+            qu'ils apportent, le style pourras être modifier plus tard. Il ne faut pas avoir un sous-titre 
+            sans titre principal -->
+        <h1>Titre super important</h1>
+        <h2>Titre important</h2>
+        <h3>Titre un peu moins important (sous-titre)</h3>
+
+        <h4>Titre pas trop important</h4>
+        <h5>Titre pas important</h5>
+        <h6>Titre vraiment pas important du tout</h6>
+
+        <!-- Les listes non ordonnées
+            ul : une liste
+            li : une puce -->
+        <ul>
+            <li>Fraises</li>
+            <li>Framboises</li>
+            <li>Cerises</li>
+        </ul>
+
+        <!-- Les listes ordonnées -->
+        <ol>
+            <li>Fraises</li>
+            <li>Framboises</li>
+            <li>Cerises</li>
+        </ol>
+
+        <!-- Les listes de définitions 
+            dl : délimiter la liste 
+            dt : délimiter un terme
+            dd : délimiter la définition de ce terme -->
+        <dl>
+            <dt>Fraises</dt><dd>C'est un fruit rouge</dd>
+            <dt>Framboises</dt><dd>C'est un fruit rouge</dd>
+            <dt>Cerises</dt><dd>C'est un fruit rouge</dd>
+        </dl>
+
+        <h2>LES LIENS HYPERTEXT</h2>
+        <!-- Liens hypertext -->
+        <!-- Aller vers un autre site web -->
+        <!-- Attribut title permet d'avoir une infobulle -->
+        <!-- Attribut target blank permet d'ouvrir dans un autre onglet -->
+        <a href="https://openclassrooms.com" title="Vous ne le regretterez pas !" target="_blank">OpenClassrooms</a>
+        <br />
+        <!-- Lien relative : Aller d'une page à une autre de notre site -->
+        <a href="pages/home.html">Allez sur ma page d'accueil</a>
+        <br />
+        <!-- Aller à un élément spécifique dans la même page de notre site -->
+        <a href="#partie2">Allez à la partie 2 de cette page</a>
+        <br />
+        <!-- Aller à un élément spécifique dans une autre page de notre site -->
+        <a href="pages/home.html#part3">Allez à la partie 3 de la page d'accueil</a>
+        <br />
+        <!-- Envoyer un e-mail -->
+        <a href="mailto:fiona.potter@eori-informatique.fr">Envoyez moi un e-mail !</a>
+        <br />
+        <!-- Télcharger un fichier -->
+        <a href="files/fichier.zip">Télécharger le fichier</a>
+        <br />
+
+        <h2>LES IMAGES</h2>
+        <a href="pages/images.html">Allez sur la page d'explication sur les images !</a>
+
+        <h2>LE CSS</h2>
+        <a href="pages/appliquer_css.html">Allez sur la page de test de CSS !</a>
+
+        <h2>LA STRCUTURE D'UNE PAGE</h2>
+        <a href="pages/structure.html">Allez sur la page d'explication de la structuration d'une page !</a>
+
+        <h2>LE MODELE DES BOITES</h2>
+        <a href="pages/modele_boite.html">Allez sur la page d'explication du modèle des boîtes !</a>
+
+        <h2>FLEXBOX</h2>
+        <a href="pages/flexbox.html">Allez sur la page d'explication des flexbox !</a>
+
+        <h2>TP Zozor</h2>
+        <a href="pages/TP_zozor.html">Allez sur la page du TP Zozor !</a>
+
+        <h2>Les tableaux</h2>
+        <a href="pages/tableaux.html">Allez sur la page d'explication des tableaux !</a>
+
+        <h2>Les formulaires</h2>
+        <a href="pages/formulaires.html">Allez sur la page d'explication des formulaires !</a>
+
+        <h2>Vidéos / Audios </h2>
+        <a href="pages/video_audio.html">Allez sur la page d'explication des videos et des audios !</a>
+
+        <h2>Responsive</h2>
+        <a href="pages/responsive.html">Allez sur la page d'explication du responsive design !</a>
+
+        <h3 id="partie1">Partie 1</h3>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        
+
+        <h3 id="partie2">Partie 2</h3>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+        <p>... (beaucoup de texte) ...</p>
+
+    </body>
+
+</html>
+
+<image nom="photo.jpg"/>
+<br />

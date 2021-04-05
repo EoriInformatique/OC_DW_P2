@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Images</title>
+    </head>
+    <body>
+        <h1>Bienvenue sur la page d'explication sur les images !</h1>
+
+        <h2>JPEG</h2>
+        <p>Photos</p>
+
+        <h2>PNG</h2>
+        <p>Illustrations, logos, dessins. Il a le gros avantage d'avoir des zones de transparence.</p>
+
+        <h2>GIF</h2>
+        <p>Illustrations, animé</p>
+
+        <!-- Il faut que la balise image ait les attributs src et alt et qu'elle soit contenu dans une 
+            autre balise, ici par exemple il est dans un paragraphe -->
+        <p>
+            Voici une photo :<br />
+            <a href="../images/photo-medium.jpg" title="Cliquez pour agrandir !"><img src="../images/photo-small.jpg" alt="Photo 1"/></a>
+        </p>
+
+        <!-- La balise figure et figcaption ont apparue avec HTML5
+            Si on veut dire que l'image est une figure et qu'elle a un sens dans la page en lui mettant 
+            un libellé. Si une image apporte une information il faut la mettre dans unz figure -->
+        <figure>
+            <img src="../images/Reservia.png" alt="Logo Reservia" />
+            <figcaption>Le logo Reservia</figcaption>
+        </figure>
+
+    </body>
+</html>

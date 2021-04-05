@@ -1,0 +1,124 @@
+/*
+style.css
+---------
+ 
+Par Fiona Potter
+*/
+
+#conteneur {
+    border: 2px solid #444;
+}
+
+#conteneurflex {
+    display: flex;
+    border: 2px solid #444;
+}
+
+#conteneurflexcolumn {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #444;
+}
+
+#conteneurflexcolumnreverse {
+    display: flex;
+    flex-direction: column-reverse;
+    border: 2px solid #444;
+}
+
+#conteneurflexrowreverse {
+    display: flex;
+    flex-direction: row-reverse;
+    border: 2px solid #444;
+}
+
+#conteneurflexwrap {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    border: 2px solid #444;
+}
+
+#conteneurjustifyflexstart {
+    display: flex;
+    justify-content: flex-start;
+    border: 2px solid #444;
+}
+
+#conteneurjustifyflexend {
+    display: flex;
+    justify-content: flex-end;
+    border: 2px solid #444;
+}
+
+#conteneurjustifycenter {
+    display: flex;
+    justify-content: center;
+    border: 2px solid #444;
+}
+
+#conteneurjustifyspacebetween {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #444;
+}
+
+#conteneurjustifyspacearound {
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid #444;
+}
+
+#conteneuralignvertical {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 200px;
+    border: 2px solid #444;
+}
+
+#conteneuraligncontent {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+
+    height: 500px;
+    border: 2px solid #444;
+}
+
+.element {
+    width: 200px;
+    height: 100px;
+}
+
+/* nth-child(1) signifie que je prend le premier element du code */
+.element:nth-child(1) {
+    background-color: orange;
+    order: 3;
+}
+
+.element:nth-child(2) {
+    background-color: blue;
+}
+
+.element:nth-child(3) {
+    background-color: #ad6;
+}
+
+.elementLots {
+    width: 200px;
+    height: 100px;
+}
+
+.elementLots:nth-child(n) {
+    background-color: orange;
+}
+
+.elementLots:nth-child(2n) {
+    background-color: blue;
+}
+
+.elementLots:nth-child(3n) {
+    background-color: #ad6;
+}

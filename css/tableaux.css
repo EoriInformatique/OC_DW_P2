@@ -1,0 +1,14 @@
+/*
+style.css
+---------
+ 
+Par Fiona Potter
+*/
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid black;
+}
